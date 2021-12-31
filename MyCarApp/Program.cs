@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using MyCarApp.Data;
 using MyCarApp.Data.Models;
+using MyCarApp.Services.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<MyCarAppDbContext>(options =>options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<MyCarAppDbContext>(options => options.UseSqlServer(builder.Configuration[ConfigurationNamesConstants.ConnectionString]));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
