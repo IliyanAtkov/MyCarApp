@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCarApp", "MyCarApp\MyCarA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8DAFE7BE-36D5-40C8-ADF9-2E4AE6B225E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCarApp.Data", "Data\MyCarApp.Data\MyCarApp.Data.csproj", "{521CC66E-DDC3-47B7-9209-7832F2EAD25C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCarApp.Data", "Data\MyCarApp.Data\MyCarApp.Data.csproj", "{521CC66E-DDC3-47B7-9209-7832F2EAD25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCarApp.Data.Models", "Data\MyCarApp.Data.Models\MyCarApp.Data.Models.csproj", "{BF8F3F45-29A5-439A-9598-164B45C7A5FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCarApp.Data.Models", "Data\MyCarApp.Data.Models\MyCarApp.Data.Models.csproj", "{BF8F3F45-29A5-439A-9598-164B45C7A5FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{514DE4B3-44CF-4DF1-9C49-DBE898BE92AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCarApp.Services", "Services\MyCarApp.Services\MyCarApp.Services.csproj", "{C3129177-0144-4F6B-9BA9-59992E9E9235}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,10 @@ Global
 		{BF8F3F45-29A5-439A-9598-164B45C7A5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF8F3F45-29A5-439A-9598-164B45C7A5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF8F3F45-29A5-439A-9598-164B45C7A5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3129177-0144-4F6B-9BA9-59992E9E9235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3129177-0144-4F6B-9BA9-59992E9E9235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3129177-0144-4F6B-9BA9-59992E9E9235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3129177-0144-4F6B-9BA9-59992E9E9235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{521CC66E-DDC3-47B7-9209-7832F2EAD25C} = {8DAFE7BE-36D5-40C8-ADF9-2E4AE6B225E1}
 		{BF8F3F45-29A5-439A-9598-164B45C7A5FC} = {8DAFE7BE-36D5-40C8-ADF9-2E4AE6B225E1}
+		{C3129177-0144-4F6B-9BA9-59992E9E9235} = {514DE4B3-44CF-4DF1-9C49-DBE898BE92AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CA13C53-F8C1-496A-A000-ACD51C6362E3}
