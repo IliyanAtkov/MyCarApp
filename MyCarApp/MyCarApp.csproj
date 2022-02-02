@@ -9,8 +9,8 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
-	  <UserSecretsId>1570fc0e-62b2-4b73-bf10-4a4078b88bc4</UserSecretsId>
-  </PropertyGroup>
+		<UserSecretsId>1570fc0e-62b2-4b73-bf10-4a4078b88bc4</UserSecretsId>
+	</PropertyGroup>
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<Nullable>enable</Nullable>
@@ -20,6 +20,10 @@
 		<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.AspNetCore.Mvc" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="6.0.1" />

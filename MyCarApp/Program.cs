@@ -7,7 +7,6 @@ using MyCarApp.Data.Models;
 using MyCarApp.Services.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddDbContext<MyCarAppDbContext>(options => options.UseSqlServer(builder.Configuration[ConfigurationNamesConstants.ConnectionString]));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
