@@ -44,9 +44,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Data\MyCarApp.Data.Models\MyCarApp.Data.Models.csproj" />
-		<ProjectReference Include="..\Data\MyCarApp.Data\MyCarApp.Data.csproj" />
-		<ProjectReference Include="..\Services\MyCarApp.Services\MyCarApp.Services.csproj" />
+		<ProjectReference Include="..\..\Data\MyCarApp.Data.Models\MyCarApp.Data.Models.csproj" />
+		<ProjectReference Include="..\..\Data\MyCarApp.Data\MyCarApp.Data.csproj" />
+		<ProjectReference Include="..\..\Services\MyCarApp.Services.Cars\MyCarApp.Services.Cars.csproj" />
+		<ProjectReference Include="..\..\Services\MyCarApp.Services\MyCarApp.Services.csproj" />
 	</ItemGroup>
 
 	<Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
@@ -67,7 +68,7 @@
 		<!-- Include the newly-built files in the publish output -->
 		<ItemGroup>
 			<DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
-			<ResolvedFileToPublish Include="@(DistFiles-&gt;'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+			<ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
 				<RelativePath>wwwroot\%(RecursiveDir)%(FileName)%(Extension)</RelativePath>
 				<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 				<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
