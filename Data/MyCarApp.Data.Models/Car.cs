@@ -19,12 +19,19 @@
 
         [Required]
         public int CurrentMileage { get; set; }
- 
+
+        [Required]
+        public FuelType FuelType { get; set; }
+
+        [Required]
         public User User { get; set; } = null!;
+
+        public ICollection<Reminder> Reminders { get; set; } = new List<Reminder>();
+
+        public ICollection<Refuel> Refuels { get; set; } = new List<Refuel>();
 
         public ICollection<Consumable> Consumables { get; set; } = new List<Consumable>();
 
         public ICollection<Expense> Expenses { get; set; } = new List<Expense>();
-
     }
 }

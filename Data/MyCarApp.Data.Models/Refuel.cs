@@ -1,6 +1,6 @@
 ﻿namespace MyCarApp.Data.Models
 {
-    public class Expense
+    public class Refuel
     {
         [Key]
         public int Id { get; set; }
@@ -9,12 +9,15 @@
         public DateTime Date { get; set; }
 
         [Required]
-        public string Name { get; set; } = null!;
-
-        public string? Note { get; set; }
+        public decimal Liters { get; set; }
 
         [Required]
         public decimal Price { get; set; }
+
+        [Required]
+        public decimal PriceLiter { get; set; }
+
+        public string? Note { get; set; }
 
         [Required]
         public int CarId { get; set; }

@@ -20,6 +20,10 @@
         [Required]
         public bool AlertWhenForChange { get; set; }
 
+        [Required]
+        public int CarId { get; set; }
+
+        [Required]
         public Car Car { get; set; } = null!;
     }
 }

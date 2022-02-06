@@ -12,7 +12,7 @@
 		<Using Include="System.Linq" />
 		<Using Include="System.Text" />
 		<Using Include="System.Threading.Tasks" />
-		<Using Include="System.ComponentModel.DataAnnotations"/>
+		<Using Include="System.ComponentModel.DataAnnotations" />
 	</ItemGroup>
 
 	<ItemGroup>
